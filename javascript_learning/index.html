@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Teste</title>
+    <link rel="stylesheet" href=".//style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="jbtron" class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Formulário Coletor</h1>
+        <p>Teste logo abaixo inserindo suas informações</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark bg-dark navbar-dark">
+    </nav>
+    <div class="container">
+        <h1>Insira Seus Dados</h1>
+        <p id="datapar">Os seus dados serão coletados pelo formulário e replicados com um Modal.</p>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Nome Completo</label>
+                    <input type="text" class="form-control" placeholder="Insira seu nome" id="inputName">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">E-mail</label>
+                    <input type="email" class="form-control" placeholder="sample@email.com" id="inputEmail">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputCPF">CPF</label>
+                    <input type="text" class="form-control" id="inputCPF">
+                </div>
+
+                <div class="form-group col-md-2">
+                    <label for="inputCEP">CEP</label>
+                    <input type="text" class="form-control" id="inputCEP">
+                </div>   
+
+                <div class="form-group col-md-2">
+                    <label for="inputState">Estado</label>
+                    <select id="inputState" class="form-control" id="inputEstado">
+                        <option selected>Selecione...</option>
+                        <option value="BA">BA</option>
+                        <option value="RS">RS</option>
+                        <option value="RJ">RJ</option>
+                        <option value="PE">PE</option>
+                    </select>
+
+                    </div>    
+                </div>     
+            </div>
+        </div>
+        </form>
+    </div>
+    <button class="btn btn-primary">Enviar</button>
+</body>
+</html>

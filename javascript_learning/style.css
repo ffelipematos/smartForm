@@ -1,0 +1,17 @@
+.fakeimg {
+    height: 200px;
+    background-color: #aaaaaa
+}
+
+.datarpar {
+    text-align: center;
+}
+
+.btn-primary enviarbtn{
+    margin left: 10px;
+}
+
+.btn-primary {
+    margin-left: 600px; !important
+    margin-top: 35px; !important
+}
