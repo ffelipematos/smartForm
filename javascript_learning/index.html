@@ -12,13 +12,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
     <script src="./js/index.js"></script>
-
-
+    <script src="./js/validarcampo.js"></script>
 </head>
 
 <body>
 
     <div id="jbtron" class="jumbotron text-center" style="margin-bottom:0">
+        <!--<img id="imgwllp" src="./img/wllpp.jfif">-->
         <h1>Formulário Coletor</h1>
         <p>Teste logo abaixo inserindo suas informações</p>
     </div>
@@ -29,31 +29,32 @@
         <h1>Insira Seus Dados</h1>
         <p id="datapar">Os seus dados serão coletados pelo formulário e replicados com um Modal.</p>
 
-        <form>
+        <form name="form1" method="post">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputName">Nome Completo</label>
-                    <input type="text" class="form-control" placeholder="Insira seu nome" id="inputName">
+                    <input type="text" class="form-control" placeholder="Insira seu nome" name="nome" id="inputName">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputEmail">E-mail</label>
-                    <input type="email" class="form-control" placeholder="sample@email.com" id="inputEmail">
+                    <input type="email" class="form-control" placeholder="sample@email.com" name="email" id="inputEmail">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-3">
                     <label for="inputCPF">CPF</label>
-                    <input type="text" class="form-control" id="inputCPF">
+                    <input type="text" class="form-control" name="cpf" id="inputCPF">
                 </div>
 
                 <div class="form-group col-md-2">
                     <label for="inputCEP">CEP</label>
-                    <input type="text" class="form-control" id="inputCEP">
+                    <input type="text" class="form-control" name="cep" id="inputCEP">
                 </div>   
 
-                <div class="form-group col-md-2">
+                <div class="form-group col-md-3">
                     <label for="inputState">Estado</label>
+
                     <select id="inputState" class="form-control" id="inputEstado">
                         <option selected>Selecione...</option>
                         <option value="BA">BA</option>
@@ -62,12 +63,33 @@
                         <option value="PE">PE</option>
                     </select>
 
-                    </div>    
-                </div>     
-            </div>
+<!-- Button trigger modal -->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Enviar Informações</button> -->
+  <button type="button" class="btn btn-primary" onclick="return validarcampo()">Enviar Informações</button>
+
+  <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <div class="modal-body">INFO</div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
         </div>
-        </form>
     </div>
-    <button class="btn btn-primary">Enviar</button>
+</div>
+</div>
+</div> 
+</div>      
+</div> 
+</div>
+    </form>
+</div>
+
 </body>
 </html>

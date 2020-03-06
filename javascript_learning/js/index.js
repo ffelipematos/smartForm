@@ -9,6 +9,7 @@ function getFormData($form){
     return indexed_array;
 }
 
+
 $(document).ready(function(){
     $("button").click(function(){
       //var form = JSON.stringify($("form").serializeArray());
@@ -23,7 +24,6 @@ $(document).ready(function(){
     });
 
     $('#inputCPF').mask('000.000.000-00');
-    $('#inputCEP').mask('0000-0000');
-
+    $('#inputCEP').mask('00000-000');
   
   });

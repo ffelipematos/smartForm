@@ -1,5 +1,4 @@
-.fakeimg {
-    height: 200px;
+.fakeimg { 
     background-color: #aaaaaa
 }
 
@@ -7,11 +6,11 @@
     text-align: center;
 }
 
-.btn-primary enviarbtn{
-    margin left: 10px;
+.imgwllp{
+    height: 200px;
 }
 
-.btn-primary {
-    margin-left: 600px; !important
-    margin-top: 35px; !important
+.btn-primary{
+    margin-top: 20px !important; 
+    margin-left: 20px !important; 
 }
