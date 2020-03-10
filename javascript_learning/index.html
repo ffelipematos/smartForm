@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/validarcampo.js"></script>
+    <script src="./js/validarcpf.js"></script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
         <h1>Insira Seus Dados</h1>
         <p id="datapar">Os seus dados serão coletados pelo formulário e replicados com um Modal.</p>
 
-        <form name="form1" method="post">
+        <form name="form1" method="post" action="index.html">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputName">Nome Completo</label>
@@ -42,9 +43,11 @@
             </div>
 
             <div class="form-row">
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-4">
                     <label for="inputCPF">CPF</label>
-                    <input type="text" class="form-control" name="cpf" id="inputCPF">
+                    <input type="text" class="form-control" name="cpf" id="cpf">
+                        <button type="button" class="btn btn-primary" onclick="VerificaCPF();">Checar</button>
+                    <span id="resposta"></span>
                 </div>
 
                 <div class="form-group col-md-2">
@@ -65,8 +68,8 @@
 
 <!-- Button trigger modal -->
 <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Enviar Informações</button> -->
-  <button type="button" class="btn btn-primary" onclick="return validarcampo()">Enviar Informações</button>
-
+    <button type="button" class="btn btn-primary" onclick="return validarcampo();">Enviar Informações</button>
+  
   <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">

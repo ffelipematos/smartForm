@@ -9,7 +9,6 @@ function getFormData($form){
     return indexed_array;
 }
 
-
 $(document).ready(function(){
     $("button").click(function(){
       //var form = JSON.stringify($("form").serializeArray());
